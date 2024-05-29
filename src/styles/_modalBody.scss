@@ -1,0 +1,42 @@
+.modal-body{
+    position: relative;
+    margin-top: 1rem;
+    .assign-to , .note{
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin: 1rem 0;
+      > svg{
+        color: #ea2b2d;
+      }
+      address{
+        height: 50px;
+        width: 187px;
+        border: 2px solid #EDEDED;
+        border-radius: 8px;
+        padding: 0 10px;
+
+        h4{
+          margin: 0;
+          font-size: 1rem;
+          font-weight: 400;
+        }
+       
+      }
+      .dropdown{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        border: 1px solid #efefef;
+        border-radius: 25px;
+        padding: 0.5rem;
+        font-size: 0.76rem;
+        width: 150px;
+
+        svg{
+          cursor: pointer;
+          font-size: 14px;
+        }
+      }
+    }
+  }
