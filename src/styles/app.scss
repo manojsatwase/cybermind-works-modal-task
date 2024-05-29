@@ -1,0 +1,138 @@
+@import 'selectOption';
+@import 'modalComment';
+@import 'modalBody';
+@import 'modalFooter';
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .modal-btn {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #625BFE;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #544de2;
+    }
+  }
+  .modal.fade-out {
+    animation: fadeOutAnimation 0.5s ease forwards;
+  }
+  
+  .modal {
+    width: 319.45px;
+    height: 534.72px;
+    margin: 100px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: fadeInAnimation 0.5s ease forwards;
+
+    button {
+      border: none;
+      background-color: white;
+      color:hsl(1, 81%, 73%);
+      font-size: 12px;  
+      cursor: pointer;
+    }
+    
+
+    .event-actions{
+      display: flex;
+      justify-content: space-between;
+      .btn-complete{
+       svg{
+        border: 1px solid hsl(1, 81%, 73%);
+        border-radius: 55%;
+        font-size: 8px;
+        padding: 2px;
+       }
+      }
+    }
+
+    img{
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+  
+ 
+  .modal-header{
+    position: relative;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    input {
+      outline: none;
+    }
+
+     p , input  , .date-container{
+      height: 30px;
+      width: 270px;
+      border: 1px solid #cecece;
+      padding: 0.5rem 1.5rem;
+      border-radius: 25px;
+      margin: 1rem auto;
+      font-size: 1.2rem;
+      color: #ea2b2d;
+      font-weight: bold;
+      margin: 0;
+     }
+
+     .date-container{
+      display: flex;
+      align-items: center;
+    }
+
+     .date-container > span {
+      font-size: 14px;
+      line-height: 5px;
+      color: black;
+      margin: 0 5px;
+     }
+  }
+ 
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fadeOutAnimation {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
