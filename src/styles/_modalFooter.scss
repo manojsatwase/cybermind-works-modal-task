@@ -1,0 +1,46 @@
+.modal-footer{
+    .commentForm {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      height: 75px;
+      position: absolute;
+      bottom: 0;
+      
+     
+      .comment-control {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        position: relative; 
+    
+        input[type='text'] {
+          flex: 1;
+          padding: 0.8rem 3rem 0.8rem 1rem; 
+          border: 1px solid #cecece;
+          border-radius: 25px;
+          outline: none;
+          font-weight: 500;
+          font-size: 1rem;
+          width: 200px;
+        }
+        button {
+          margin-bottom: 1.5rem;
+        }
+    
+        svg {
+          position: absolute;
+          right: 10px;
+          font-size: 18px;
+          color: #ea2b2d;
+          cursor: pointer;
+          transform: rotate(48deg);
+          margin-right: 1.5rem;
+    
+          &:hover {
+            color: #026958;
+          }
+        }
+      }
+    }
+  }
